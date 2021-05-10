@@ -1,0 +1,128 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+}
+/* HOME-IMAGES */
+.home-images{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-images .logo{
+    height: 11vh;
+
+    margin-top: 5vh;
+    margin-left: -7vw;
+}
+
+.home-images .home-img{
+    height: 68vh;
+
+    margin-left: -5vw;
+    margin-top: 12vh;
+}
+
+/* MAIN */
+.content{
+    margin-top:7vh;
+}
+
+.form-group {
+    margin-top:1vh;
+    display: flex;
+    flex-direction: column;
+    margin-left:1vw;
+}
+
+.form-group label {
+    font-size: 10.5px;
+    margin-bottom:3.5px;
+}
+
+.form-group input,
+.form-group select {
+    background: rgba(194, 207, 178, 0.6);
+    width: 40vw;
+    height: 30px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 11px;
+    padding: 0 15px;
+    outline: none;
+    transition: border-color 0.2s ease-in;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #FF7373;
+}
+
+.form-group button {
+    background-image: linear-gradient(-90deg, #FF7373 0%, #FDDB33 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: 0;
+    height: 32.5px;
+    color: #1A1A1A;
+    font-size: 12.5px;
+    cursor: pointer;
+}
+
+.form-group:last-child {
+    margin-top: 32px;
+}
+
+.result-container {
+    margin-left:1vh;
+    margin-top: 35px;
+}
+
+.result-container h2{
+    font-weight: 500;
+    font-size:16px;
+}
+
+.result-content {
+    margin-top: 10px;
+    background: rgba(194, 207, 178, 0.6);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.result-content ul {
+    list-style: none;
+}
+
+.result-content ul li {
+    font-size: 11.5px;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    line-height: 22px;
+}
+
+.result-content ul li strong {
+    color: #FC7753;
+}
